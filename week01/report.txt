@@ -1,0 +1,1 @@
+In the task week01, we learn a new material in operating system like pull and push and make a new file and folder and delete file
