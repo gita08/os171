@@ -22,3 +22,5 @@ drwxr-xr-x  2 irena.gita StafCS 4096 Feb 16 09:27 week09
 drwxr-xr-x  2 irena.gita StafCS 4096 Feb 16 09:28 week10
 drwxr-xr-x  2 irena.gita StafCS 4096 Feb 16 09:30 xtra
 /home/fasilkom/mahasiswa/i/irena.gita/os171/week01
+Today is date +%d\ %b\ %Y\ at\ %H:%M:%S
+Today is 16 Feb 2017 at 10:32:05
