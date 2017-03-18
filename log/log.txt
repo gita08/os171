@@ -1,2 +1,5 @@
 w00-170206-10-LR-About : Introduction to Operating System, From : Book-Guide to Operating System
-w01-170216-9-PS-About : Lab Practice Week01-Learn how to script from putty
+w01-170216-9-PS-About : Lab Practice Week01-Learn CLI,GIT,Scripting
+w05-170315-9-PS-About: GITHUB Learning about demo memory
+w05-170316-13-LR-About : Listening to the lecturer
+w05-170318-10-PS-About: Lab Practice Week05-Learn about memory
