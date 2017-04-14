@@ -1,0 +1,11 @@
+Program yang terdapat dalam 06-memory.c menampilkan detaill dari prosesberjalannya suatu komputer
+
+Fungsi malloc() merupakan fungsi yang mengalokasikan memori dimana mempunyai satu parameter yaitu size untuk menentukan ukuran memori yang dialokasikan
+Jika alokasi memori berhasil maka akan dikembalikan pointer ke alamat memori yg 
+dialokasikan dan jika gagal akan dinyatakan dengan NULL
+
+Fungsi system() menerima argumen berupa command atau progam yang akan dijalankan yang dieksekusi olej command processor dan dirturn ketika progam selesai berjalan
+
+Source :
+http://www.studytonight.com/c/dynamic-memory-allocation-in-c.php
+https://www.tutorialspoint.com/c_standard_library/c_function_system.html
