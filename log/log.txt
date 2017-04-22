@@ -6,3 +6,6 @@ w05-170318-10-PS-About: Lab Practice Week05-Learn about memory
 w06-170411-10-LR-About: Reading books Operating_System_Concepts Silberchatz 
 w06-170413-13-LR-About: Listening to the lecturer
 w06-170414-12-PS-About: Lab Practice Week06-Fork
+w07-170620-10-LR-About: Reading books Operating_System_Concepts Silberchatz
+w07-170620-13-LR-About: Listening to the lecturer about semaphore
+w07-170422-10-PS-About: Lab Practice Week07

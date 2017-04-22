@@ -1,0 +1,49 @@
+# Github Account: irenagita23
+
+1a. What are PID and PPID?
+
+PID adalah process identifier ke sistem dimana PID adalah nomor yang digunakan untuk mengidentifikasi
+proses yang aktif secara unik. Proses diidentifikasi dan di manage via pid.
+	
+PPID adalah parent process idetifier dimana PPID memberikan informasi mengenai pid dari proses yang
+memulai proses yang sedang berjalan (parent dari suatu proses)
+	
+1b. What do the getpid(), getppid(), sleep, and wait functions do?
+
+getpid() adalah fungsi yang mengembalikan pid milik proses yang sedang aktif
+	
+getppid() adalah fungsi yang mengembalikan pid milik orang tua (parent) dari proses yang sedang aktif
+	
+wait akan menyebabkan parent process menunggu children berubah state menjadi mati
+	
+sleep digunakan untuk memberhentikan proses untuk sementara, dalam waktu yang telah ditentukan.
+				
+1c. What are the return values of fork() ?
+
+fork akan mereturn 0 jika proses tersebut merupakan parent,	
+fork akan mereturn PID jika proses tersebut merupakan child,
+dan fork kan mereturn -1 jika terjadi error
+	
+SOURCES:
+http://www.tutorialspoint.com/unix_system_calls/getpid.htm
+http://www.quora.com/What-is-the-difference-between-wait-and-sleep-in-operating-system
+http://stackoverflow.com/questions/30493424/what-is-the-difference-between-a-process-pid-ppid-uid-euid-gid-and-egid
+week-03-processes-thread.pdf
+
+2a. What does procStatus function do?
+
+procStatus berfungsi untuk mencetak status dari suatu proses berupa pid, ppid dan level yang
+menandakan proses tersebut berada pada tingkat keberapa dari suatu proses yang pertama
+memulai proses lainnya.
+
+2b. What is the usage of wait(NULL) in function levelFork (not in general) ?
+
+wait(NULL) pada levelFork berfungsi untuk memastikan bahwa tidak ada child lagi yang harus di proses, jika child sudah
+mencapai null maka akan mengembalikan -1 dan akan melanjutkan ke parent selannjutnya atau menunggu perhitungan level child pertama
+dari suatu proses yang selesai. Ketika proses tersebut selesai maka akan dilanjutkan perhitungan level pada child
+berikutnya
+
+2c. What is the usage of fflush(NULL) in function procStatus (not in general) ?
+
+fflush(NULL) pada procStatus berfungsi untuk mengosongkan output buffer setelah melakukan print
+agar pencetakan outpur berlangsung satu per satu atau membatalkan/membuang prosesbuffer sehingga akan mengeksekusi seluruh prosesnya terlebih dahulu, lalu mencetaknya
