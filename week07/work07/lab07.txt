@@ -1,0 +1,57 @@
+#Github Account : irenagita23
+
+1. brief summary of the program
+03-readwrite :
+Progam ini mempunyai 3 variabel pada reader yaitu R_REHAT, R_READ,R_JUMLAH 
+serta 3 variabel pada writer yaitu W_REHAT, W_WRITE, W_JUMLAH
+
+R_REHAT : sleep time readers
+R_JUMLAH : kecepatan membaca readers
+W_REHAT : sleep time writers
+W_WRITE : kecepatan mengetik writers
+W_JUMLAH : jumlah writters
+
+a.Pada method main progam akan mendaftarkan thread reader dan writer, 
+
+b.Lalu seluruh thread akan dijalankan dimana (program bertujuan untuk mengkontrol agar proses dieksekusi seperti antrian),
+
+c.Secara acak akan tterpilih reader/writter mana yang sudah siap untuk dieksekusi contoh : 
+jika reader ingin membaca maka readers harus menunggu writer selesai menulis terlebih dahulu dan
+jika writter ingin menulis maka harus menunggu readers selesai membaca
+
+d.Jika ada reader yang sedang membaca dan ada reader lain yang ingin membaca setelahnhya maka reader lain
+baru dapat membaca setelah reader pertama selesai membaca dan jika ada writter yang sedang menunggu
+antrian sebelum reader kedua maka reader kedua yang ingin membaca akan didahulukan
+
+e. Pada saat reader sedang membaca atau writter sedang menulis, readers dan writters akan istirahat secara acak beberapa detik
+
+05-balap:
+-Pada progam tersebut terdapat 1 bandae dan 10 pemain pembalap
+-Pada method main semaphore diinisialisasi terlebih dahulu
+-Setelah itu bandar dan 10 pembalap didaftarkan threadnya
+-11 thread akan dijalankan
+-Bandar akan menunggu 10 pembalap
+-Secara acak pembalap akan bersiap di posisi START
+-Setiap pembalap akan post signal ke bandar
+-Jika sudah  maka pembalap akan menunggu bandar untuk siap
+-Kemudian bandar akan post signal ke pembalap untuk balapan
+-Secara acak akan ada 1 pembalap yang menang untuk mencapai mutex pertama kali
+-Ke 9 pembalap lain tidak menang karna variabel menang sudah diganti FALSE
+
+2. critical deadline
+
+03-readwrite:
+Critical section readers terjadi saat startRead() dan endRead(), critical section writers akan terjadi saat startWrite() dan endWrite().
+Program tersebut akan memeriksa apakah ada readers/writers yang sedang dieksekusi/membaca/menulis serta progaram akan mengkontrol flow dalam
+antrian agar tidak terjadi tabrakan antara writers dan readers.
+
+05-balap:
+Terjadi saat pembalap sudah memulai baapan dimana pembalap yang pertama kali mencapai mutex maka dia akan MENANG dimana variabel MENANG=TRUE
+dan pembalap lain yang tidak akan menjadi pemenang karena variabel MENANG = TRUE berganti menjadi MENANG = FALSE
+Critical section dimulai dari IF (MENANG == TRUE) sampai (MENANG == FALSE)
+
+3. purpose of using mutex and outcome if not using mutex
+
+Mutex akan mengkontrol setiap eksekusi thread dalam waktu bersamaan
+Jika tidak menggunakan mutex maka akan terjadi race condition sehingga eksekusi thread tidak terkontrol.
+
