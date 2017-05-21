@@ -11,3 +11,8 @@ w07-170620-13-LR-About: Listening to the lecturer about semaphore
 w07-170422-10-PS-About: Lab Practice Week07
 w08-170425-13-LR-About: Sockets
 w08-170428-21-PS-About: Lab Practice Week08
+w09-170504-13-LR-About: Disk Structure,Disk Attachment,Disk Schedulling
+w09-170509-13-LR-About: Raid Structure
+w09-170520-10-PS-About: Lab Practice Week09
+w10-170511-13-LR-About: Input/Output System and STREAMS
+W10-170520-10-PS-About: Lab Practice Week10-Membuat Ulasan 1 dan Ulasan 2

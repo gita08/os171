@@ -1,0 +1,26 @@
+# Github Account : irenagita23
+
+
+*  00-server.c
+
+Program tersebut membuat suatu komputer berperan sebagai server.
+Kemudian program akan mengalokasikan koneksi antar komputer.
+Akan dilakukan pengecekan jumlah argumen pada terminal (argc) ketika menjalankan
+program ini, dibutuhkan dua argumen jika tidak akan terjadi error.
+Karena argumen pertama merupakan eksekusi program dan argumen kedua merupakan
+port number yang akan digunakan dalam program.
+Setelah server address diset, struktur data akan diikat dengan fungsi bind().
+Setelah itu akan dijalankan method listen() yang akan menunggu client mengirim
+pesan ke server.
+
+*  01-client.c
+Program tersebut membuat suatu komputer berperan sebagai client.
+Agar pesan berhasil disampaikan koneksi harus melibatkan sebuah server yang
+menginisiasikan sebuah koneksi.
+Program ini membutuhkan 3 argumen yaitu eksekusi program, ip address, dan port.
+Nomor port disimpan dengan method atoi. server didapatkan dengan gethostbyname. jika server tidak null, akan dijalankan method memset, dan memmove.
+Kemudian pesan akan dikirim ke ip address dan port yang telah ditentukan.
+
+* 02-clisvr.c
+Program ini memiliki kemiripan dengan 01-client.c. Yang membedakannya adalah
+pada 01-client.c pesan hanya dikirim ke komputer yang sama yang berperan sebagai server dan client sekaligus. Namun pada 02-clisvr.c pesan dikirim antar server dan client beberapa komputer yang berbeda.
